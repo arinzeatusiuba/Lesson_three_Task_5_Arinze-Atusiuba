@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .courses {
+	padding: 10px;
+	text-align: center;
+	margin-top:5%;
+	margin-bottom: 0%;
+	background-color: rgb(22, 3, 45);
+	color: #fff;
+	width:100%;
+  }
+  
+  
+  body {
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+  }
+  
+  header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+  }
+  
+  .main-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	padding: 80px;
+  
+  }
+  
+  .column {
+	background-color: #f1f1f1;
+	padding: 20px;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	transition: background-color 0.3s ease;
+	text-align: center;
+	border-radius: 0.5rem;
+  }
+  
+  .column:hover {
+	background-color: #ddd;
+	transform: scale(1.05);
+  }
+  
+  
+  .column a {
+	color: #333;
+	transition: color 0.3s ease;
+  }
+  
+  .column a:hover {
+	color: #f00;
+  }
+  
+  .column img {
+	max-width: 70%;
+	height: auto;
+	margin-bottom: 10px;
+  }
+  
+  
+  footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  /* Media Queries */
+  /* Desktop size */
+  @media screen and (max-width: 768px) {
+	.main-content {
+	  grid-template-columns: 1fr;
+	}
+  
+	.row {
+	  grid-template-columns: 1fr;
+	}
+  }
+  /* mobile screen  */
+  @media screen and (max-width: 480px) {
+	.column {
+	  padding: 10px;
+	}
+  }
+  
